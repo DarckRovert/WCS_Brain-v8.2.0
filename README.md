@@ -951,12 +951,12 @@ Evento → CombatController → Emergencia? → Cache → SmartAI → Ejecuta
 - Twitch: [darckrovert](https://www.twitch.tv/darckrovert)
 - Kick: [darckrovert](https://kick.com/darckrovert)
 
-**Versión:** 6.9.2  
-**Fecha:** Enero 7, 2026  
+**Versión:** 8.0.0  
+**Fecha:** Marzo 22, 2026  
 
 ---
 
-## 🔧 Correcciones v8.0.0 (Enero 2, 2026)
+## 🔧 Correcciones v8.0.0 (Marzo 22, 2026)
 
 ### ✅ Revisión Completa - 66 Archivos
 

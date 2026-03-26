@@ -1,5 +1,5 @@
 --[[
-    WCS_BrainCore.lua - Núcleo de Ejecución del Cerebro Central
+    WCS_BrainCore.lua - Nucleo de Ejecucion del Cerebro Central
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
     
     Sistema independiente - no requiere otros módulos WCS
@@ -48,7 +48,7 @@ local function debugPrint(msg)
 end
 
 -- ============================================================================
--- DETECCIÓN DE ESTADO
+-- DETECCION DE ESTADO
 -- ============================================================================
 
 -- Verificar si estamos en GCD

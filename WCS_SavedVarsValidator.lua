@@ -1,5 +1,5 @@
 --[[
-    WCS_SavedVarsValidator.lua - Data Integrity Auditor v8.0.0
+    WCS_SavedVarsValidator.lua - Data Integrity Auditor v9.0.0
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
 ]]--
 
@@ -25,7 +25,7 @@ function WCS.Validator:Audit()
     WCS_BrainSaved.Log = WCS_BrainSaved.Log or {}
     WCS_BrainSaved.Achievements = WCS_BrainSaved.Achievements or {}
     
-    WCS:Log("SavedVars Audit: OK (UI v8.0 READY)")
+    WCS:Log("SavedVars Audit: OK (UI v9.0 READY)")
     WCS_BrainSaved.Version = "8.0.0"
 end
 

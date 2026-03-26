@@ -1,5 +1,5 @@
 --[[
-    WCS_TacticalHUD.lua - Visual Intelligence v8.0.0
+    WCS_TacticalHUD.lua - Visual Intelligence v9.0.0
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
 ]]--
 
@@ -75,4 +75,4 @@ function HUD:Update()
     if UnitAffectingCombat("player") or UnitExists("target") then self.Main:Show() else self.Main:Hide() end
 end
 
-WCS:Log("Tactical HUD v8.0.0 (Hardened API) Aligned.")
+WCS:Log("Tactical HUD v9.0.0 (Hardened API) Aligned.")

@@ -133,6 +133,10 @@ WCS_BrainCombatController (Coordinador Central)
     ├── WCS_BrainAI (Sistema Base)
     │   └── Reglas básicas de combate
     │
+    ├── TerrorSquadAI Link (Vínculo Táctico) [ v5.0.0 ]
+    │   ├── Sincronización de decisiones DQN/ML
+    │   └── Directivas estratégicas globales
+    │
     └── WCS_BrainPetAI (Control de Mascota)
         └── Coordinación con acciones del jugador
 ```

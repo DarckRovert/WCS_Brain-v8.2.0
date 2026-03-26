@@ -1,5 +1,5 @@
 --[[
-    WCS_SummonManager.lua - Tactical Summoning v8.0.0 (Unified)
+    WCS_SummonManager.lua - Tactical Summoning v9.0.0 (Unified)
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
 ]]--
 
@@ -51,4 +51,4 @@ if WCS.EventManager then
     WCS.EventManager:Register("CHAT_MSG_GUILD", Handle)
 end
 
-WCS:Log("Summon Manager v8.0.0 (Data-Bound) Ready.")
+WCS:Log("Summon Manager v9.0.0 (Data-Bound) Ready.")

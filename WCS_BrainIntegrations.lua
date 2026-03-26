@@ -1,5 +1,5 @@
 --[[
-    WCS_BrainIntegrations.lua - Sistema de Integración con Addons v6.4.2
+    WCS_BrainIntegrations.lua - Sistema de Integracion con Addons v6.4.2
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
     
     Integración con addons populares:
@@ -15,7 +15,7 @@ WCS_BrainIntegrations.VERSION = "6.4.2"
 WCS_BrainIntegrations.enabled = true
 
 -- ============================================================================
--- CONFIGURACIÓN DE INTEGRACIONES
+-- CONFIGURACION DE INTEGRACIONES
 -- ============================================================================
 WCS_BrainIntegrations.Config = {
     enableDamageMeters = true,
@@ -29,7 +29,7 @@ WCS_BrainIntegrations.Config = {
 }
 
 -- ============================================================================
--- DETECCIÓN DE ADDONS
+-- DETECCION DE ADDONS
 -- ============================================================================
 WCS_BrainIntegrations.DetectedAddons = {
     damageMeters = {},
@@ -44,7 +44,9 @@ WCS_BrainIntegrations.DetectedAddons = {
     buffDebuff = {},
     combatText = {},
     cooldownTrackers = {},
-    other = {}
+    other = {
+        "Atlas-TW", "Atlas", "DoTimer", "EquipCompare"
+    }
 }
 
 -- Lista de addons conocidos
@@ -61,12 +63,12 @@ WCS_BrainIntegrations.KnownAddons = {
     
     -- Boss Mods
     bossMods = {
-        "BigWigs", "CTRaidAssist", "CTRA", "BossWarnings", "RaidAlert"
+        "BigWigs", "CTRaidAssist", "CTRA", "BossWarnings", "RaidAlert", "TerrorSquadAI"
     },
     
-    -- Unit Frames
+    -- unitFrames
     unitFrames = {
-        "DiscordUnitFrames", "ag_UnitFrames", "Perl", "XPerl", "PitBull"
+        "DiscordUnitFrames", "ag_UnitFrames", "Perl", "XPerl", "PitBull", "pfUI", "HealBot"
     },
     
     -- Casting Bars
@@ -86,7 +88,7 @@ WCS_BrainIntegrations.KnownAddons = {
 
     -- Quest Helpers
     questHelpers = {
-        "Questie", "ShaguQuest", "QuestHelper", "MonkeyQuest", "QuestLog"
+        "Questie", "ShaguQuest", "QuestHelper", "MonkeyQuest", "QuestLog", "pfQuest"
     },
 
     -- Action Bars
@@ -107,6 +109,11 @@ WCS_BrainIntegrations.KnownAddons = {
     -- Cooldown Trackers
     cooldownTrackers = {
         "OmniCC", "CooldownCount", "ClassicCastbars", "CooldownTimers"
+    },
+
+    -- Other
+    other = {
+        "TerrorNet", "TacticalHUD", "TacticalMap"
     }
 }
 

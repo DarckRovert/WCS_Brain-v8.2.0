@@ -10,6 +10,9 @@ Addon modular avanzado para Turtle WoW (1.12) que implementa un sistema de IA ul
 
 La versión 8.0 representa la evolución definitiva. Hemos consolidado el ecosistema fragmentado en un **Hub de Control de 5 Pestañas** y expandido el cerebro a todo el clan.
 
+### 🌐 Séquito Ecosystem Compatible
+Este addon es ahora el **Vínculo Maestro** del ecosistema de 10 addons del clan. Se comunica bidireccionalmente con `TerrorSquadAI`, `TerrorMeter`, `pfUI` y el resto de la flota para una coordinación de combate inigualable.
+
 ### ✨ Características Principales
 
 #### 1. WCS_ClassEngine: El Motor Universal

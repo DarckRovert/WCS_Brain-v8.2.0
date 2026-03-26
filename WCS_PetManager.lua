@@ -1,5 +1,5 @@
 --[[
-    WCS_PetManager.lua - Pet Intelligence Engine v8.0.0 (Multi-Class)
+    WCS_PetManager.lua - Pet Intelligence Engine v9.0.0 (Multi-Class)
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
 ]]--
 
@@ -38,4 +38,4 @@ function PM:OnUpdate()
     end
 end
 
-WCS:Log("Pet Manager v8.0.0 (Multi-Class Guard) Ready.")
+WCS:Log("Pet Manager v9.0.0 (Multi-Class Guard) Ready.")

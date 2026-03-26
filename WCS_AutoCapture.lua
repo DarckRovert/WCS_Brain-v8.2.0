@@ -1,5 +1,5 @@
 --[[
-    WCS_AutoCapture.lua - Autonomous Journalist v8.0.0
+    WCS_AutoCapture.lua - Autonomous Journalist v9.0.0
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
 ]]--
 
@@ -12,4 +12,4 @@ function AC:Capture(reason)
     if Screenshot then Screenshot() end
 end
 
-WCS:Log("Auto-Capture v8.0.0 [Active]")
+WCS:Log("Auto-Capture v9.0.0 [Active]")

@@ -1,5 +1,5 @@
 --[[
-    WCS_DecisionEngine.lua - Elite Tactical Engine v8.0.0 (Multi-Class)
+    WCS_DecisionEngine.lua - Elite Tactical Engine v9.0.0 (Multi-Class)
     Compatible con Lua 5.0 (WoW 1.12 / Turtle WoW)
     
     Resuelve la mejor accion en base a la clase detectada por WCS.ClassEngine.
@@ -116,4 +116,4 @@ function DE:GetBestAction()
     return { spell = filler, reason = "Filler" }
 end
 
-WCS:Log("Decision Engine v8.0.0 [Multi-Class] — ClassEngine Aligned.")
+WCS:Log("Decision Engine v9.0.0 [Multi-Class] — ClassEngine Aligned.")

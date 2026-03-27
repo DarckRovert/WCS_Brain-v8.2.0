@@ -1,27 +1,47 @@
-# 📋 WCS_Brain - Guía de Comandos v8.0.0
+# Comandos de WCS_Brain v9.3.1
 
-## ⌨️ Comandos Maestros (God-Tier)
-- `/brain` o `/wcs` - Abre el **Hub de Comando Maestro** (Consola principal).
-- `/brain config` - Acceso directo a la configuración de la IA.
-- `/brain reset` - Reinicia estadísticas y memoria de aprendizaje.
+## Comandos Principales
 
-## 🖱️ Comandos de Interfaz (Holographic & Specialized)
-- `/brainhud` - Activa/Desactiva el HUD Holográfico estilo Iron Man.
-- `/tutorialui` - Abre la interfaz del Tutorial Interactivo.
-- `/braintutorial start` - Reinicia el tutorial guiado.
-- `/wcsdash` - Abre el Dashboard de rendimiento técnico.
-- `/wcswa status` - Muestra el estado de la integración con WeakAuras.
+| Comando | Alias | Descripción |
+|---|---|---|
+| /wcsbrain | /wb | Abre/cierra el panel principal |
+| /wb ai | — | Panel de IA DQN |
+| /wb clan | — | Panel de clan |
+| /wb perfiles | — | Gestión de perfiles de personaje |
+| /wb mascota | — | Panel de IA de mascotas |
+| /wb grimoire | — | Grimorio de hechizos Warlock |
+| /wb raid | — | Gestor de raid |
+| /wb pvp | — | Tracker de PvP |
+| /wb banco | — | Banco de clan |
+| /wb macros | — | Gestor de macros |
+| /wb stats | — | Estadísticas de rendimiento |
+| /wb hud | — | Alternar HUD de recursos |
+| /wb alertas | — | Configurar alertas de demonios |
+| /wb reset | — | Resetear toda la configuración |
+| /wb debug | — | Modo diagnóstico |
+| /wb help | /wb ayuda | Lista de comandos |
 
-## ⚔️ Comandos de Combate e IA
-- `/autoexec on/off` - Activa la ejecución automática de rotación (Combat AI).
-- `/wcscombat mode hybrid` - Cambia al modo de combate equilibrado (Recomendado).
-- `/brainlearn status` - Muestra el progreso del aprendizaje automático.
-- `/petai debug` - Activa el seguimiento de decisiones de la mascota.
+## Comandos de IA
 
-## 🏛️ Logística (El Séquito del Terror)
-- `/clan` - Abre el panel central de hermandad.
-- `/clanbank` - Abre el monitor del banco del clan.
-- `/summonpanel` - Abre la cola de invocación (Summon Queue).
+| Comando | Descripción |
+|---|---|
+| /wb ai start | Iniciar aprendizaje DQN |
+| /wb ai stop | Detener IA |
+| /wb ai reset | Resetear modelo de aprendizaje |
+| /wb ai status | Ver estado del modelo |
 
----
-*Usa `/brain help` dentro del juego para ver la ayuda contextual.*
+## Comandos de Perfil
+
+| Comando | Descripción |
+|---|---|
+| /wb perfil guardar <nombre> | Guardar perfil actual |
+| /wb perfil cargar <nombre> | Cargar un perfil guardado |
+| /wb perfil borrar <nombre> | Eliminar un perfil |
+| /wb perfil lista | Listar perfiles disponibles |
+
+## Comandos de Mascota
+
+| Comando | Descripción |
+|---|---|
+| /wb mascota auto on/off | Activar/desactivar IA de mascota |
+| /wb mascota modo <nombre> | Cambiar modo (agresivo/defensivo/pasivo) |

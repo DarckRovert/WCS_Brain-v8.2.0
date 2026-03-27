@@ -1,5 +1,18 @@
 # Changelog - WCS_Brain
 
+## [9.4.0] - Marzo 27, 2026
+### FIXED - UI Layout Audit & Complete Grid Redesign
+- **Grilla Consistente**: Todas las pestañas (5-14) ahora usan paneles de `308x455px` con columnas en `x=14` (izq) y `x=360` (der).
+- **Overlap de Títulos**: Primera fila de contenido movida a `y=-28` dentro de cada sección, evitando colisión con el título de la sección.
+- **Overflow Corregido**: Listas largas (habilidades de mascota, logros, historial) reformateadas para no exceder el alto del panel.
+- **Checkbox Alineado**: Labels y checkboxes en Tab 10 (Auto) ahora quedan en la misma línea horizontal.
+- **Slider Legible**: El valor del slider de reacción en Tab 14 (Rotaciones) ya no se superpone con el template del slider.
+- **Botones Full-Width**: Botones de rotación, reparación y acción ahora usan el ancho completo del panel (`PANEL_W - 24`).
+
+## [9.3.2] - Marzo 27, 2026
+### FIXED
+- **Compatibilidad WoW 1.12**: Corregido error de nil en `UpdateAddOnMemoryUsage()` dentro de `WCS_BrainTabPanels.lua`. Se implementó un fallback dinámico a `gcinfo()` para servidores Vanilla (incluyendo Turtle WoW).
+
 ## [9.3.1] - Marzo 25, 2026
 ### 🛠️ CRITICAL PET AI FIX (RESTAURACION TOTAL)
 - **Normalización de Capitalización**: Corregidos más de 15 nombres de habilidades de mascotas a "Sentence Case" (ej: "Escudo de fuego") para compatibilidad total con el comando `/cast` en el cliente español de WoW 1.12.
@@ -8,19 +21,18 @@
 - **Sincronización de Tiempos**: Ajustado el delay de restauración de target a 0.8s para paridad exacta con la versión estable anterior.
 
 ## [9.3.0] - Marzo 25, 2026
-### âœ¨ UI OVERHAUL & NATIVE INTEGRATION
-- **Panel Maestro Consolidado**: Todas las ventanas secundarias flotantes (Perfiles, Auto-EjecuciÃ³n, Logros, DiagnÃ³stico, Integraciones) se han movido a un Ãºnico panel maestro de 680x490px con estÃ©tica coherente ("SÃ©quito del Terror").
-- **EliminaciÃ³n de Ventanas VacÃ­as**: El script `WCS_BrainTabPanels.lua` ya no depende del orden del `.toc` para inyectar su UI. Se han eliminado los envoltorios condicionales, resolviendo el problema crÃ³nico donde los tabs aparecÃ­an vacÃ­os.
+### ✨ UI OVERHAUL & NATIVE INTEGRATION
+- **Panel Maestro Consolidado**: Todas las ventanas secundarias flotantes (Perfiles, Auto-Ejecución, Logros, Diagnóstico, Integraciones) se han movido a un único panel maestro de 680x490px con estética coherente ("Séquito del Terror").
+- **Eliminación de Ventanas Vacías**: El script `WCS_BrainTabPanels.lua` ya no depende del orden del `.toc` para inyectar su UI. Se han eliminado los envoltorios condicionales, resolviendo el problema crónico donde los tabs aparecían vacíos.
 - **Lazy Loading**: Todas las vistas de UI son inicializadas de forma perezosa mediante `getPanel()` para no sobrecargar el login del usuario, garantizando 0 lag en el primer frame.
-- **ResoluciÃ³n de Colisiones**: Reescritura del frame de `WCSBrainDiagnosticsFrame` para permitir el funcionamiento paralelo de los comandos de barra (`/wcsdiag`) con la pestaÃ±a del Clan de forma segura.
-- **Purga de Syntax Errors**: Se resolvieron 3 errores de parseo `<eof> expected` generados tras la eliminaciÃ³n de los wrappers en `TabPanels.lua`.
+- **Purga de Syntax Errors**: Se resolvieron 3 errores de parseo `<eof> expected` generados tras la eliminación de los wrappers en `TabPanels.lua`.
 
 ## [8.3.7-RESTORED] - Marzo 24, 2026
 ### FIXED
-- **RESTAURACIÃ“N TOTAL**: Se ha recuperado el nÃºcleo de IA de mascotas original del respaldo funcional de F:\ (72KB).
-- **Paridad Bit-a-Bit**: SincronizaciÃ³n exacta de `WCS_BrainPetAI.lua`, `WCS_Helpers.lua`, `WCS_EventManager.lua`, `WCS_ResourceManager.lua`, `WCS_SpellDB.lua` y `WCS_SpellLocalization.lua`.
-- **Ecosistema Recuperado**: Re-activados los 12 mÃ³dulos de mascotas en el `.toc` para permitir coordinaciÃ³n avanzada y modo GuardiÃ¡n.
-- **Sin Errores de Carga**: El archivo `WCS_BrainPetAI.lua` ahora tiene sus 1970 lÃ­neas originales, garantizando que todas las estrategias tÃ¡cticas estÃ©n presentes.
+- **RESTAURACIÓN TOTAL**: Se ha recuperado el núcleo de IA de mascotas original del respaldo funcional de F:\ (72KB).
+- **Paridad Bit-a-Bit**: Sincronización exacta de `WCS_BrainPetAI.lua`, `WCS_Helpers.lua`, `WCS_EventManager.lua`, `WCS_ResourceManager.lua`, `WCS_SpellDB.lua` y `WCS_SpellLocalization.lua`.
+- **Ecosistema Recuperado**: Re-activados los 12 módulos de mascotas en el `.toc` para permitir coordinación avanzada y modo Guardián.
+- **Sin Errores de Carga**: El archivo `WCS_BrainPetAI.lua` ahora tiene sus 1970 líneas originales, garantizando que todas las estrategias tácticas estén presentes.
 - **UI Stable**: Corregido error `Log (a nil value)` en `WCS_BrainUI.lua:912` que bloqueaba el inicio del addon.
 
 

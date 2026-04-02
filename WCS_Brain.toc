@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: |cFF9482C9WCS|r |cFF00FF00Brain|r - Cerebro Central Inteligente
+## Title: |cffffffffWCS_Brain |r|cff00ccff[Séquito del Terror]|r
 ## Notes: Sistema de IA para Warlock - Exclusivo de El Sequito del Terror
 ## Notes-esES: Sistema de IA para Warlock - Exclusivo de El Sequito del Terror
 ## Author: El Séquito del Terror

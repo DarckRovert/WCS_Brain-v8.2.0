@@ -337,7 +337,12 @@ function WCS_BrainLocale:Get(key, ...)
     -- Obtener traducción
     local text = translations[key]
     
-    -- Si no existe la clave, devolver la clave misma
+    -- Si no existe la clave en el idioma actual, intentar con inglés (enUS) como seguridad final
+    if not text and locale ~= "enUS" and self.Translations["enUS"] then
+        text = self.Translations["enUS"][key]
+    end
+    
+    -- Si no existe ni en inglés, devolver la clave misma
     if not text then
         return key
     end
